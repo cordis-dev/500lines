@@ -16,7 +16,16 @@ class AnyOldObject(object):
     def __init__(self, **attrs):
         for n, v in attrs.items():
             setattr(self, n, v)
+			
+class AnyOldObject(object):
+    """Simple testing object.
 
+    Use keyword arguments in the constructor to set attributes on the object.
+
+    """
+    def __init__(self, **attrs):
+        for n, v in attrs.items():
+            setattr(self, n, v)
 
 class TempliteTest(TestCase):
     """Tests for Templite."""
